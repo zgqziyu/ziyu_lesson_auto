@@ -19,7 +19,6 @@ Thymeleaf | 模板引擎 | 3.0.9.RELEASE |  [https://www.thymeleaf.org/](https:/
 Apache Shiro | 安全框架 | 1.2.2 |  [http://shiro.apache.org](http://www.mybatis.org/generator/index.html)
 Logback | 日志组件 | 1.1.3 |  [https://logback.qos.ch](https://logback.qos.ch/)
 Druid | 数据库连接池 | 0.2.23 |  [https://github.com/alibaba/druid](https://github.com/alibaba/druid)
-Hibernate Validator | 后端校验框架 | 5.4.2.Final | [http://hibernate.org/validator/](http://hibernate.org/validator/)
 swagger2 | 在线文档生成 |  2.9.2 | [https://swagger.io/](https://swagger.io/) 
 
 ### 前端技术
@@ -97,7 +96,7 @@ ZTree | jQuery树插件 | 3.5.29 |  [http://www.treejs.cn](http://www.treejs.cn)
 
 `mvn mybatis-generator:generate`
 
-### 后续
+## 后续
 
 该项目是我初学Mybatis时整合的，智能排课的功能还不是很完善，还会继续完善该功能的开发。
 
