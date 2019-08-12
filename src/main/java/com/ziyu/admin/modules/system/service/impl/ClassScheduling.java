@@ -41,6 +41,7 @@ public class ClassScheduling {
         if (!this.checkInputGradeInfo(this.gradeInfoMap)) {
             return false;
         }
+        //检查课程是否可以排满
         if (!this.processNullPos(this.gradeInfoMap)) {
             return false;
         }

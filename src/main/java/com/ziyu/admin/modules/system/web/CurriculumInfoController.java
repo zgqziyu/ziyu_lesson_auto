@@ -51,7 +51,6 @@ public class CurriculumInfoController extends BaseCrudController<CurriculumInfo>
                                       Model model) {
         List<List<Map<String, Object>>> resultList = curriculumInfoService.getCurriculumInfoByParams(grade, classId);
         model.addAttribute("curriculumInfoList", resultList);
-        System.err.println("resultList : "+resultList);
         return resultList;
     }
 
