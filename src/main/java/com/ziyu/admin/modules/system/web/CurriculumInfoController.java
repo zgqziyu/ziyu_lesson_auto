@@ -45,7 +45,6 @@ public class CurriculumInfoController extends BaseCrudController<CurriculumInfo>
 
     @ResponseBody
     @PostMapping("/table/{grade}/{classId}")
-    @SystemLog("查询课程表")
     public List<List<Map<String, Object>>> curriculumInfoTable(@NotNull @PathVariable("grade")String grade,
                                       @NotNull @PathVariable("classId")String classId,
                                       Model model) {
@@ -57,6 +56,7 @@ public class CurriculumInfoController extends BaseCrudController<CurriculumInfo>
     @ResponseBody
     @PostMapping("/createTable")
     @RequiresPermissions("curriculumInfo:createTable")
+    @SystemLog("智能排课")
     public Result createTable() {
         //先清空数据库
         curriculumInfoService.truncate();
