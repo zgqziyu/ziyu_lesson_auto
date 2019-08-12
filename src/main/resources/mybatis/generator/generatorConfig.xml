@@ -11,7 +11,7 @@
         <property name="endingDelimiter" value="`"/>
 
         <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
-            <property name="mappers" value="com.wetech.admin.core.utils.MyMapper"/>
+            <property name="mappers" value="com.ziyu.admin.core.utils.MyMapper"/>
         </plugin>
 
         <jdbcConnection driverClass="${spring.datasource.driver-class-name}"
@@ -20,49 +20,49 @@
                         password="${spring.datasource.password}">
         </jdbcConnection>
 
-        <javaModelGenerator targetPackage="tech.wetech.admin.modules.example.po" targetProject="src/main/java"/>
+        <javaModelGenerator targetPackage="com.ziyu.admin.modules.example.po" targetProject="src/main/java"/>
 
-        <sqlMapGenerator targetPackage="tech.wetech.admin.modules.example.mapper" targetProject="src/main/java"/>
+        <sqlMapGenerator targetPackage="com.ziyu.admin.modules.example.mapper" targetProject="src/main/java"/>
 
-        <javaClientGenerator targetPackage="tech.wetech.admin.modules.example.mapper" targetProject="src/main/java"
+        <javaClientGenerator targetPackage="com.ziyu.admin.modules.example.mapper" targetProject="src/main/java"
                              type="XMLMAPPER"/>
 
-        <table schema="wetech_admin" tableName="sys_group" domainObjectName="Group">
+        <table schema="ziyu_admin" tableName="sys_group" domainObjectName="Group">
             <!--mysql 配置-->
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
             <!--oracle 配置-->
             <!--<generatedKey column="id" sqlStatement="select SEQ_{1}.nextval from dual" identity="false" type="pre"/>-->
         </table>
 
-        <table schema="wetech_admin" tableName="sys_log" domainObjectName="Log">
+        <table schema="ziyu_admin" tableName="sys_log" domainObjectName="Log">
             <!--mysql 配置-->
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
             <!--oracle 配置-->
             <!--<generatedKey column="id" sqlStatement="select SEQ_{1}.nextval from dual" identity="false" type="pre"/>-->
         </table>
 
-        <table schema="wetech_admin" tableName="sys_organization" domainObjectName="Organization">
+        <table schema="ziyu_admin" tableName="sys_organization" domainObjectName="Organization">
             <!--mysql 配置-->
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
             <!--oracle 配置-->
             <!--<generatedKey column="id" sqlStatement="select SEQ_{1}.nextval from dual" identity="false" type="pre"/>-->
         </table>
 
-        <table schema="wetech_admin" tableName="sys_resource" domainObjectName="Resource">
+        <table schema="ziyu_admin" tableName="sys_resource" domainObjectName="Resource">
             <!--mysql 配置-->
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
             <!--oracle 配置-->
             <!--<generatedKey column="id" sqlStatement="select SEQ_{1}.nextval from dual" identity="false" type="pre"/>-->
         </table>
 
-        <table schema="wetech_admin" tableName="sys_role" domainObjectName="Role">
+        <table schema="ziyu_admin" tableName="sys_role" domainObjectName="Role">
             <!--mysql 配置-->
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
             <!--oracle 配置-->
             <!--<generatedKey column="id" sqlStatement="select SEQ_{1}.nextval from dual" identity="false" type="pre"/>-->
         </table>
 
-        <table schema="wetech_admin" tableName="sys_user" domainObjectName="User">
+        <table schema="ziyu_admin" tableName="sys_user" domainObjectName="User">
             <!--mysql 配置-->
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
             <!--oracle 配置-->

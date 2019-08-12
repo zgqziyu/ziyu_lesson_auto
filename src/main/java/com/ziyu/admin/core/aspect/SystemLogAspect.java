@@ -18,6 +18,7 @@ import com.ziyu.admin.core.utils.WebUtil;
 import com.ziyu.admin.modules.system.po.Log;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.Date;
 
 /**
  * \* User: ziyu
@@ -114,6 +115,7 @@ public class SystemLogAspect {
         log.setExecDesc(desc);
         // 响应信息
         log.setReturnVal(text);
+        log.setCreateTime(new Date());
         try {
             // 入库
             applicationEventPublisher.publishEvent(log);
