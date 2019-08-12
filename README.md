@@ -1,6 +1,6 @@
 # ziyu_lesson_auto
 
-ziyu_lesson_auto 是基于开源项目Wetech-Admin[https://github.com/cjbi/wetech-admin]的基础上修改而成， 项目是基于 Spring Boot 2.0 + Mybatis 的轻量级后台管理系统，适用于中小型项目的管理后台以及小学，初中和高中课程智能排课管理，支持按钮级别的权限控制，系统具有最基本的用户管理、角色管理、资源管理、组织机构管理、系统日志、代码生成器等通用性功能。
+ziyu_lesson_auto 是基于开源项目Wetech-Admin[https://github.com/cjbi/wetech-admin] 的基础上修改而成， 项目是基于 Spring Boot 2.0 + Mybatis 的轻量级后台管理系统，适用于中小型项目的管理后台以及小学，初中和高中课程智能排课管理，支持按钮级别的权限控制，系统具有最基本的用户管理、角色管理、资源管理、组织机构管理、系统日志、代码生成器等通用性功能。
 
 
 ## 技术选型
@@ -97,6 +97,7 @@ ZTree | jQuery树插件 | 3.5.29 |  [http://www.treejs.cn](http://www.treejs.cn)
 
 `mvn mybatis-generator:generate`
 
-###后续
+### 后续
+
 该项目是我初学Mybatis时整合的，智能排课的功能还不是很完善，还会继续完善该功能的开发。
 

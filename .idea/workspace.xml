@@ -13,7 +13,7 @@
     <session id="-1618105480">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.opened" value="2" />
@@ -25,7 +25,7 @@
           <entry key="html" value="2" />
           <entry key="iml" value="2" />
           <entry key="java" value="51" />
-          <entry key="md" value="7" />
+          <entry key="md" value="8" />
           <entry key="properties" value="2" />
           <entry key="xml" value="2" />
           <entry key="yml" value="1" />
@@ -37,7 +37,7 @@
           <entry key="HTML" value="2" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="JAVA" value="51" />
-          <entry key="Markdown" value="7" />
+          <entry key="Markdown" value="8" />
           <entry key="Properties" value="2" />
           <entry key="XML" value="2" />
           <entry key="YAML" value="1" />
@@ -47,7 +47,7 @@
         <counts>
           <entry key="html" value="5" />
           <entry key="java" value="30" />
-          <entry key="md" value="131" />
+          <entry key="md" value="136" />
           <entry key="txt" value="8" />
         </counts>
       </usages-collector>
@@ -55,7 +55,7 @@
         <counts>
           <entry key="HTML" value="5" />
           <entry key="JAVA" value="30" />
-          <entry key="Markdown" value="131" />
+          <entry key="Markdown" value="136" />
           <entry key="PLAIN_TEXT" value="8" />
         </counts>
       </usages-collector>
@@ -63,7 +63,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/ZiyuAdminApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="462">
@@ -72,18 +72,6 @@
                 <element signature="e#791#792#0" expanded="true" />
                 <element signature="e#862#863#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="44">
-                <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" selection-end-column="16" />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -119,6 +107,7 @@
     <option name="width" value="1105" />
     <option name="height" value="930" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <autoscrollFromSource ProjectPane="true" />
@@ -132,62 +121,6 @@
             <path>
               <item name="ziyu-admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="ziyu_lesson_auto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ziyu-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ziyu_lesson_auto" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ziyu-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ziyu_lesson_auto" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="preview" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ziyu-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ziyu_lesson_auto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ziyu-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ziyu_lesson_auto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ziyu-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ziyu_lesson_auto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ziyu-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ziyu_lesson_auto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ziyu-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ziyu_lesson_auto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ziyu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ziyu-admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ziyu_lesson_auto" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ziyu" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -205,8 +138,8 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565576138820" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565576802213" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -252,7 +185,7 @@
       <option name="presentableId" value="Default" />
       <updated>1565345069008</updated>
       <workItem from="1565345070459" duration="538000" />
-      <workItem from="1565568819301" duration="6474000" />
+      <workItem from="1565568819301" duration="7292000" />
     </task>
     <task id="LOCAL-00001" summary="修改简介">
       <created>1565569984626</created>
@@ -272,11 +205,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7012000" />
+    <option name="totallyTimeSpent" value="7830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49892703" visible="true" weight="0.22707888" />
       <window_info id="Structure" order="1" sideWeight="0.50107294" side_tool="true" weight="0.28518122" />
@@ -669,6 +601,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1681">
+            <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/ZiyuAdminApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -677,16 +619,6 @@
             <element signature="e#791#792#0" expanded="true" />
             <element signature="e#862#863#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="44">
-            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" selection-end-column="16" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
