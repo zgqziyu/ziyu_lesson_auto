@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ziyu.admin.modules.system.mapper.GradeInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.ziyu.admin.modules.system.po.GradeInfo" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="grade" property="grade" jdbcType="INTEGER" />
+    <result column="grade_name" property="gradeName" jdbcType="VARCHAR" />
+    <result column="class_count" property="classCount" jdbcType="INTEGER" />
+    <result column="day_per_week" property="dayPerWeek" jdbcType="INTEGER" />
+    <result column="lesson_per_day" property="lessonPerDay" jdbcType="INTEGER" />
+    <result column="lesson_at_am" property="lessonAtAM" jdbcType="INTEGER" />
+    <result column="lesson_at_pm" property="lessonAtPM" jdbcType="INTEGER" />
+    <result column="null_position" property="nullPosition" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, grade, grade_name, class_count, day_per_week, lesson_per_day, lesson_at_am, lesson_at_pm,
+    null_position
+  </sql>
+
+  <select id="selectByGrade" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select
+    <include refid="Base_Column_List" />
+    from class_grade_info
+    where grade = #{grade,jdbcType=INTEGER}
+  </select>
+  <!--<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from class_grade_info
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from class_grade_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="GradeInfo" >
+    insert into class_grade_info (id, grade, grade_name, 
+      class_count, day_per_week, lesson_per_day, 
+      lesson_at_am, lesson_at_pm, null_position
+      )
+    values (#{id,jdbcType=BIGINT}, #{grade,jdbcType=INTEGER}, #{gradeName,jdbcType=VARCHAR}, 
+      #{classCount,jdbcType=INTEGER}, #{dayPerWeek,jdbcType=INTEGER}, #{lessonPerDay,jdbcType=INTEGER}, 
+      #{lessonAtAm,jdbcType=INTEGER}, #{lessonAtPm,jdbcType=INTEGER}, #{nullPosition,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="GradeInfo" >
+    insert into class_grade_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="grade != null" >
+        grade,
+      </if>
+      <if test="gradeName != null" >
+        grade_name,
+      </if>
+      <if test="classCount != null" >
+        class_count,
+      </if>
+      <if test="dayPerWeek != null" >
+        day_per_week,
+      </if>
+      <if test="lessonPerDay != null" >
+        lesson_per_day,
+      </if>
+      <if test="lessonAtAm != null" >
+        lesson_at_am,
+      </if>
+      <if test="lessonAtPm != null" >
+        lesson_at_pm,
+      </if>
+      <if test="nullPosition != null" >
+        null_position,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="grade != null" >
+        #{grade,jdbcType=INTEGER},
+      </if>
+      <if test="gradeName != null" >
+        #{gradeName,jdbcType=VARCHAR},
+      </if>
+      <if test="classCount != null" >
+        #{classCount,jdbcType=INTEGER},
+      </if>
+      <if test="dayPerWeek != null" >
+        #{dayPerWeek,jdbcType=INTEGER},
+      </if>
+      <if test="lessonPerDay != null" >
+        #{lessonPerDay,jdbcType=INTEGER},
+      </if>
+      <if test="lessonAtAm != null" >
+        #{lessonAtAm,jdbcType=INTEGER},
+      </if>
+      <if test="lessonAtPm != null" >
+        #{lessonAtPm,jdbcType=INTEGER},
+      </if>
+      <if test="nullPosition != null" >
+        #{nullPosition,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="GradeInfo" >
+    update class_grade_info
+    <set >
+      <if test="grade != null" >
+        grade = #{grade,jdbcType=INTEGER},
+      </if>
+      <if test="gradeName != null" >
+        grade_name = #{gradeName,jdbcType=VARCHAR},
+      </if>
+      <if test="classCount != null" >
+        class_count = #{classCount,jdbcType=INTEGER},
+      </if>
+      <if test="dayPerWeek != null" >
+        day_per_week = #{dayPerWeek,jdbcType=INTEGER},
+      </if>
+      <if test="lessonPerDay != null" >
+        lesson_per_day = #{lessonPerDay,jdbcType=INTEGER},
+      </if>
+      <if test="lessonAtAm != null" >
+        lesson_at_am = #{lessonAtAm,jdbcType=INTEGER},
+      </if>
+      <if test="lessonAtPm != null" >
+        lesson_at_pm = #{lessonAtPm,jdbcType=INTEGER},
+      </if>
+      <if test="nullPosition != null" >
+        null_position = #{nullPosition,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="GradeInfo" >
+    update class_grade_info
+    set grade = #{grade,jdbcType=INTEGER},
+      grade_name = #{gradeName,jdbcType=VARCHAR},
+      class_count = #{classCount,jdbcType=INTEGER},
+      day_per_week = #{dayPerWeek,jdbcType=INTEGER},
+      lesson_per_day = #{lessonPerDay,jdbcType=INTEGER},
+      lesson_at_am = #{lessonAtAm,jdbcType=INTEGER},
+      lesson_at_pm = #{lessonAtPm,jdbcType=INTEGER},
+      null_position = #{nullPosition,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>-->
+</mapper>

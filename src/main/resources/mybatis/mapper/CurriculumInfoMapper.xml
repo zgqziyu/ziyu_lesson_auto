@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ziyu.admin.modules.system.mapper.CurriculumInfoMapper">
+    <resultMap id="BaseResultMap" type="com.ziyu.admin.modules.system.po.CurriculumInfo" >
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="id" property="id" jdbcType="BIGINT" />
+        <result column="grade_id" property="gradeId" jdbcType="BIGINT" />
+        <result column="class_id" property="classId" jdbcType="VARCHAR" />
+        <result column="weekday" property="weekday" jdbcType="INTEGER" />
+        <result column="pitch_num" property="pitchNum" jdbcType="INTEGER" />
+        <result column="subjectInfo_id" property="subjectInfoId" jdbcType="BIGINT" />
+        <result column="user_id" property="userId" jdbcType="BIGINT" />
+        <result column="user_name" property="userName" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+        id, grade_id, class_id, weekday, pitch_num, subjectInfo_id, user_id, user_name
+    </sql>
+
+    <select id="getCurriculumInfoByParams" resultMap="BaseResultMap" >
+        select
+        <include refid="Base_Column_List" />
+        from class_curriculum_info
+        where grade_id = #{arg0} and class_id = #{arg1} and weekday = #{arg2}
+        order by pitch_num asc
+    </select>
+
+</mapper>

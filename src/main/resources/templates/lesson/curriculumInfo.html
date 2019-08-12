@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<!-- Content Header (Page header) -->
+<section class="content-header" style="">
+    <h1>
+        课程表管理
+        <small>课程-课时管理页面</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
+        <li><a href="#">用户管理</a></li>
+        <li class="active">课程表管理</li>
+    </ol>
+</section>
+
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <div class="btn-group btn-group-sm">
+                        <form class="form-inline" id="addForm">
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                            <button shiro:hasPermission="curriculumInfo:createTable" type="button" class="btn btn-default"
+                                    data-action="{type:'submit',form:'#addForm',url:'@{/curriculumInfo/createTable}',after:'$.myAction.refreshTable'}">
+                                <i class="glyphicon glyphicon-plus"></i> 自动生成课表
+                            </button>
+                        </form>
+                    </div>
+                    <div id="toolbar" style="margin:0 auto; width:300px;">
+                        <form class="form-inline" id="searchForm">
+                            <div class="form-group">
+                                <label for="grade">年级</label>
+                                <select name="grade" id="grade" class="form-control input-sm" data-placeholder="请选择年级">
+                                    <option th:value="1" th:text="一年级"></option>
+                                    <option th:value="2" th:text="二年级"></option>
+                                    <option th:value="3" th:text="三年级"></option>
+                                    <option th:value="4" th:text="四年级"></option>
+                                    <option th:value="5" th:text="五年级"></option>
+                                    <option th:value="6" th:text="六年级"></option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="classId">班级</label>
+                                <select name="classId" id="classId" class="form-control input-sm" data-placeholder="请选择班级">
+                                    <option th:value="1" th:text="一班"></option>
+                                    <option th:value="2" th:text="二班"></option>
+                                    <option th:value="3" th:text="三班"></option>
+                                    <option th:value="4" th:text="四班"></option>
+                                    <option th:value="5" th:text="五班"></option>
+                                    <option th:value="6" th:text="六班"></option>
+                                </select>
+                            </div>
+                            <div class="btn-group btn-group-sm">
+                                <button type="button" class="btn btn-default" id="search-lesson">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                    查询
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <table id="table" class="table table-hover table-no-bordered table-striped"
+                           style="margin-top: 20px;">
+                        <thead>
+                        <tr>
+                            <th class="detail" rowspan="1">
+                                <div class="fht-cell"></div>
+                            </th>
+                            <th style="text-align: center; " data-field="id">
+                                <div class="th-inner sortable both">第一节</div>
+                                <div class="fht-cell"></div>
+                            </th>
+                            <th style="text-align: center; " data-field="username">
+                                <div class="th-inner sortable both">第二节</div>
+                                <div class="fht-cell"></div>
+                            </th>
+                            <th style="text-align: center; " data-field="groupNames">
+                                <div class="th-inner ">第三节</div>
+                                <div class="fht-cell"></div>
+                            </th>
+                            <th style="text-align: center; " data-field="organizationName">
+                                <div class="th-inner ">第四节</div>
+                                <div class="fht-cell"></div>
+                            </th>
+                            <th style="text-align: center; " data-field="classIds">
+                                <div class="th-inner ">第五节</div>
+                                <div class="fht-cell"></div>
+                            </th>
+                            <th style="text-align: center; " data-field="action">
+                                <div class="th-inner ">第六节</div>
+                                <div class="fht-cell"></div>
+                            </th>
+                            <th style="text-align: center; " data-field="action">
+                                <div class="th-inner ">第七节</div>
+                                <div class="fht-cell"></div>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="text-align: center; "  data-index="0" th:each="listOne,iterSta:${curriculumInfoList}">
+                                <td>周<div th:text="${iterSta.index}+1"></div></td>
+                                <td th:each="listTwo:${listOne}">
+                                    <div  th:text="${listTwo.subjectInfoName}"></div>
+                                    <div  th:text="${listTwo.userName}"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</section>
+<!-- /.content -->
+<script th:inline="javascript">
+
+    $("#search-lesson").click(function(){
+        var grade = $("#grade").val();
+        var classId = $("#classId").val();
+        var url = "/ziyu-admin/curriculumInfo/table/"+grade+"/"+classId;
+        $.post(url, {grade:grade, classId:classId}, function(data){
+            if(data != null){
+                var str = "";
+                for(var i = 0; i < data.length; i++){
+                    var day = i+1;
+                    str += '<tr style="text-align: center; "  data-index="0">'+
+                                '<td>周'+ day +'</td>';
+                    for(var j = 0; j < data[i].length; j++){
+                        str += '<td>'+
+                                    '<input type="hidden" id="culumInfoId" value="'+ data[i][j].id +'">'+
+                                    '<div class="lesson">'+ data[i][j].subjectInfoName +'</div>'+
+                                    '<div class="teacherName">'+ data[i][j].userName +'</div>'+
+                                '</td>';
+                    }
+                    str += '</tr>';
+                }
+                $("tbody tr").remove();
+                $("tbody").append(str);
+            }
+        });
+    });
+
+</script>
+</html>

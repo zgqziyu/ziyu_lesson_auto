@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ziyu.admin.modules.system.mapper.SubjectInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.ziyu.admin.modules.system.po.SubjectInfo" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="sub_code" property="subjectCode" jdbcType="VARCHAR" />
+    <result column="sub_name" property="subjectName" jdbcType="VARCHAR" />
+    <result column="sub_attributes" property="subjectAttributes" jdbcType="INTEGER" />
+    <result column="sub_count" property="subjectCount" jdbcType="INTEGER" />
+    <result column="sub_grade" property="subjectGrade" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, sub_code, sub_name, sub_attributes, sub_count, sub_grade
+  </sql>
+  <select id="getQuerySubjectInfoList" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select
+    <include refid="Base_Column_List" />
+    from class_subject_info
+    where sub_grade = #{subjectGrade,jdbcType=INTEGER}
+  </select>
+
+  <!--<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >-->
+    <!--select -->
+    <!--<include refid="Base_Column_List" />-->
+    <!--from class_subject_info-->
+    <!--where id = #{id,jdbcType=BIGINT}-->
+  <!--</select>-->
+  <!--<delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from class_subject_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="SubjectInfo" >
+    insert into class_subject_info (id, subject_code, sub_name, 
+      attributes, sub_count)
+    values (#{id,jdbcType=BIGINT}, #{subjectCode,jdbcType=VARCHAR}, #{subName,jdbcType=VARCHAR}, 
+      #{attributes,jdbcType=INTEGER}, #{subCount,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="SubjectInfo" >
+    insert into class_subject_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="subjectCode != null" >
+        subject_code,
+      </if>
+      <if test="subName != null" >
+        sub_name,
+      </if>
+      <if test="attributes != null" >
+        attributes,
+      </if>
+      <if test="subCount != null" >
+        sub_count,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="subjectCode != null" >
+        #{subjectCode,jdbcType=VARCHAR},
+      </if>
+      <if test="subName != null" >
+        #{subName,jdbcType=VARCHAR},
+      </if>
+      <if test="attributes != null" >
+        #{attributes,jdbcType=INTEGER},
+      </if>
+      <if test="subCount != null" >
+        #{subCount,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="SubjectInfo" >
+    update class_subject_info
+    <set >
+      <if test="subjectCode != null" >
+        subject_code = #{subjectCode,jdbcType=VARCHAR},
+      </if>
+      <if test="subName != null" >
+        sub_name = #{subName,jdbcType=VARCHAR},
+      </if>
+      <if test="attributes != null" >
+        attributes = #{attributes,jdbcType=INTEGER},
+      </if>
+      <if test="subCount != null" >
+        sub_count = #{subCount,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="SubjectInfo" >
+    update class_subject_info
+    set subject_code = #{subjectCode,jdbcType=VARCHAR},
+      sub_name = #{subName,jdbcType=VARCHAR},
+      attributes = #{attributes,jdbcType=INTEGER},
+      sub_count = #{subCount,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>-->
+</mapper>

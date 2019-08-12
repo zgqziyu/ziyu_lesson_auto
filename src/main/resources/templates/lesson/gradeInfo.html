@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<!-- Content Header (Page header) -->
+<section class="content-header" style="">
+    <h1>
+        年级上课情况管理
+        <small>年级上课情况管理页面</small>
+    </h1>
+    <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
+        <li><a href="#">年级上课情况管理</a></li>
+        <li class="active">年级上课情况管理</li>
+    </ol>
+</section>
+
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <div id="toolbar">
+                        <form class="form-inline" id="searchForm">
+                            <div class="form-group">
+                                <label for="searchName"> 年级名称</label>
+                                <input type="text" class="form-control input-sm" name="gradeName" id="searchName" placeholder="请输入组名称">
+                            </div>
+                            <div class="btn-group btn-group-sm">
+                                <button type="button" class="btn btn-default" onclick="javascript:$('table').bootstrapTable('refresh', {silent: true});">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                    查询
+                                </button>
+                                <button type="reset" class="btn btn-default">
+                                    <i class="glyphicon glyphicon-trash"></i>
+                                    清空
+                                </button>
+                            </div>
+                        </form>
+                        <div class="btn-group btn-group-sm">
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                            <button shiro:hasPermission="gradeInfo:create" type="button" id="addBtn" class="btn btn-default"
+                                    data-toggle="modal"
+                                    data-target="#addModal"><i class="glyphicon glyphicon-plus"></i> 新增
+                            </button>
+                            <!-- Indicates caution should be taken with this action -->
+                            <button shiro:hasPermission="gradeInfo:update" type="button" id="editBtn" class="btn btn-default"
+                                    data-toggle="modal"
+                                    data-target="#editModal"
+                                    data-action="{type:'editable',form:'#editForm',table:'#table'}"
+                                    disabled><i class="glyphicon glyphicon-edit"></i> 修改
+                            </button>
+                            <!-- Indicates a dangerous or potentially negative action -->
+                            <button shiro:hasPermission="gradeInfo:delete" type="button" id="deleteBtn" class="btn btn-default" data-toggle="modal"
+                                    data-target="#deleteModal"
+                                    data-action="{type:'delete',form:'#deleteForm',idField:'id',table:'#table'}"
+                                    disabled><i class="glyphicon glyphicon-remove"></i> 删除
+                            </button>
+                        </div>
+                    </div>
+                    <table id="table"></table>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</section>
+<!-- /.content -->
+
+<!-- add Modal -->
+<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="addModalLabel">添加年级信息</h4>
+            </div>
+            <div class="modal-body">
+                <form id="addForm">
+                    <div class="form-group">
+                        <label class="control-label" for="grade"><span class="asterisk">*</span>年级编号:</label>
+                        <input id="grade" type="text" class="form-control" name="grade" placeholder="输入年级编号" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="gradeName"><span class="asterisk">*</span>年级名称:</label>
+                        <input id="gradeName" type="text" class="form-control" name="gradeName" placeholder="输入年级名称"
+                               minlength="2" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="classCount"><span class="asterisk">*</span>班级数量:</label>
+                        <input id="classCount" type="text" class="form-control" name="classCount" placeholder="输入班级数量">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="dayPerWeek"><span class="asterisk">*</span>天/周:</label>
+                        <input id="dayPerWeek" type="text" class="form-control" name="dayPerWeek" placeholder="输入每周几天课">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="lessonPerDay"><span class="asterisk">*</span>课数/天:</label>
+                        <input id="lessonPerDay" type="text" class="form-control" name="lessonPerDay" placeholder="输入每天几节课">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="lessonAtAM"><span class="asterisk">*</span>课数/上午:</label>
+                        <input id="lessonAtAM" type="text" class="form-control" name="lessonAtAM" placeholder="输入上午课节">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="lessonAtPM"><span class="asterisk">*</span>课数/下午:</label>
+                        <input id="lessonAtPM" type="text" class="form-control" name="lessonAtPM" placeholder="输入下午课节">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="nullPosition"><span class="asterisk">*</span>无课优先安排的课节:</label>
+                        <input id="nullPosition" type="text" class="form-control" name="nullPosition" placeholder="无课优先安排的课节，默认每天最后一节">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="submit" form="addForm" class="btn btn-primary"
+                        data-action="{type:'submit',form:'#addForm',url:'@{/gradeInfo/create}',after:'$.myAction.refreshTable'}">
+                    确定
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- edit Modal -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="editModalLabel">修改课程</h4>
+            </div>
+            <div class="modal-body">
+                <form id="editForm">
+                    <input type="hidden" name="id"/>
+                    <div class="form-group">
+                        <label class="control-label" for="editgrade"><span class="asterisk">*</span>年级编号:</label>
+                        <input id="editgrade" type="text" class="form-control" name="grade" placeholder="输入年级编号" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="editgradeName"><span class="asterisk">*</span>年级名称:</label>
+                        <input id="editgradeName" type="text" class="form-control" name="gradeName" placeholder="输入年级名称"
+                               minlength="2" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="editclassCount"><span class="asterisk">*</span>班级数量:</label>
+                        <input id="editclassCount" type="text" class="form-control" name="classCount" placeholder="输入班级数量">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="editdayPerWeek"><span class="asterisk">*</span>天/周:</label>
+                        <input id="editdayPerWeek" type="text" class="form-control" name="dayPerWeek" placeholder="输入天/周">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="editlessonPerDay"><span class="asterisk">*</span>课数/天:</label>
+                        <input id="editlessonPerDay" type="text" class="form-control" name="lessonPerDay" placeholder="输入课数/天">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="editlessonAtAM"><span class="asterisk">*</span>课数/上午:</label>
+                        <input id="editlessonAtAM" type="text" class="form-control" name="lessonAtAM" placeholder="输入课数/上午">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="editlessonAtPM"><span class="asterisk">*</span>课数/下午:</label>
+                        <input id="editlessonAtPM" type="text" class="form-control" name="lessonAtPM" placeholder="输入课数/下午">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="editnullPosition"><span class="asterisk">*</span>无课优先安排的课节:</label>
+                        <input id="editnullPosition" type="text" class="form-control" name="nullPosition" placeholder="无课优先安排的课节，默认每天最后一节">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="submit" form="editForm" class="btn btn-primary"
+                        data-action="{type:'submit',form:'#editForm',url:'@{/gradeInfo/update}',after:'$.myAction.refreshTable'}">
+                    确定
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- delete modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteSmallModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="deleteSmallModalLabel">删除组</h4>
+            </div>
+            <div class="modal-body">
+                <form id="deleteForm"></form>
+                确定要删除选中的 <span class="records"></span> 条记录?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" form="deleteForm" class="btn btn-primary"
+                        data-action="{type:'submit',form:'#deleteForm',url:'@{/gradeInfo/delete-batch}',after:'$.myAction.refreshTable'}">
+                    确定
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="actionButtons" class="admin-hide">
+    <a class="like" href="javascript:void(0)" data-toggle="tooltip" title="Like"><i class="glyphicon glyphicon-heart"></i></a>　
+    <a shiro:hasPermission="gradeInfo:update" class="edit ml10" href="javascript:void(0)" data-toggle="tooltip" title="编辑"><i class="glyphicon glyphicon-edit"></i></a>　
+    <a shiro:hasPermission="gradeInfo:delete" class="remove ml10" href="javascript:void(0)" data-toggle="tooltip" title="删除"><i class="glyphicon glyphicon-remove"></i></a>　
+</div>
+
+<script th:inline="javascript">
+
+    var $table = $('#table');
+
+    $(function () {
+        // bootstrap table初始化
+        // http://bootstrap-table.wenzhixin.net.cn/zh-cn/documentation/
+        $table.bootstrapTable({
+            url: CONTEXT_PATH + '/gradeInfo/list',
+            idField: 'id',
+            columns: [
+                {field: 'state', checkbox: true},
+                {field: 'id', title: '编号', sortable: false, halign: 'left'},
+                {field: 'grade', title: '年级', sortable: false, halign: 'left'},
+                {field: 'gradeName', title: '年级名称', sortable: false, halign: 'left'},
+                {field: 'classCount', title: '班级数', sortable: false, halign: 'left'},
+                {field: 'dayPerWeek', title: '天/周', sortable: false, halign: 'left'},
+                {field: 'lessonPerDay', title: '课数/天', sortable: false, halign: 'left'},
+                {field: 'lessonAtAM', title: '课数/上午', sortable: false, halign: 'left'},
+                {field: 'lessonAtPM', title: '课数/下午', sortable: false, halign: 'left'},
+                {field: 'nullPosition', title: '无课优先安排的课节', sortable: false, halign: 'left'},
+                {
+                    field: 'action',
+                    title: '操作',
+                    halign: 'center',
+                    align: 'center',
+                    formatter: 'actionFormatter',
+                    events: 'actionEvents',
+                    clickToSelect: false
+                }
+            ]
+        });
+    });
+
+    // 数据表格展开内容
+    function detailFormatter(index, row) {
+        var html = [];
+        $.each(row, function (key, value) {
+            html.push('<p><b>' + key + ':</b> ' + value + '</p>');
+        });
+        return html.join('');
+    }
+
+    function actionFormatter(value, row, index) {
+        return $('#actionButtons').html();
+    }
+
+    window.actionEvents = {
+        'click .like': function (e, value, row, index) {
+            alert('You click like icon, row: ' + JSON.stringify(row));
+            console.log(value, row, index);
+        },
+        'click .edit': function (e, value, row, index) {
+            $('#editModal').modal('show')
+            $('#editForm').fillForm(row);
+            console.log(value, row, index);
+        },
+        'click .remove': function (e, value, row, index) {
+            $('#deleteModal').modal('show');
+            $('.records').html('1');
+            var html = '';
+            for (var key in row) {
+                html += '<input type="hidden" name="' + key + '" value="' + row[key] + '">';
+            }
+            $('#deleteForm').html(html);
+        }
+    };
+</script>
+</html>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ziyu.admin.modules.system.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="com.ziyu.admin.modules.system.po.User" >
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="id" property="id" jdbcType="BIGINT" />
+        <result column="organization_id" property="organizationId" jdbcType="BIGINT" />
+        <result column="username" property="username" jdbcType="VARCHAR" />
+        <result column="password" property="password" jdbcType="VARCHAR" />
+        <result column="salt" property="salt" jdbcType="VARCHAR" />
+        <result column="role_ids" property="roleIds" jdbcType="VARCHAR" />
+        <result column="group_ids" property="groupIds" jdbcType="VARCHAR" />
+        <result column="class_ids" property="classIds" jdbcType="VARCHAR" />
+        <result column="locked" property="locked" jdbcType="BIT" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+        id, organization_id, username, password, salt, role_ids, group_ids, locked
+    </sql>
+    <select id="getQueryUserList" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+        select
+        <include refid="Base_Column_List" />
+        from sys_user
+        where role_ids LIKE #{roleId}
+    </select>
+
+    <select id="getQueryUserListByOrganizationId" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+        select
+        <include refid="Base_Column_List" />
+        from sys_user
+        where organization_id = #{organizationId}
+        order by id asc
+    </select>
+
+    <select id="getUserListByParams" resultMap="BaseResultMap" >
+        select
+        <include refid="Base_Column_List" />
+        from sys_user
+        where organization_id = #{organizationId} and group_ids like "%"#{groupIds}"%"
+    </select>
+
+    <select id="userByParams" resultMap="BaseResultMap" >
+        select
+        <include refid="Base_Column_List" />
+        from sys_user
+        where organization_id = #{organizationId} and group_ids like "%"#{groupIds}"%" and class_ids like "%"#{classIds}"%"
+    </select>
+</mapper>
