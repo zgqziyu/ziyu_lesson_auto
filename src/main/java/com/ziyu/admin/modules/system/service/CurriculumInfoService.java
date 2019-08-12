@@ -2,6 +2,7 @@ package com.ziyu.admin.modules.system.service;
 
 import com.ziyu.admin.modules.base.service.IService;
 import com.ziyu.admin.modules.system.po.CurriculumInfo;
+import org.apache.ibatis.annotations.Update;
 
 import java.util.List;
 import java.util.Map;
@@ -22,5 +23,10 @@ public interface CurriculumInfoService extends IService<CurriculumInfo> {
      * @return
      */
     List<List<Map<String, Object>>>  getCurriculumInfoByParams(String gradeId, String classId);
+
+    /**
+     * 清空表数据
+     */
+    void truncate();
 
 }

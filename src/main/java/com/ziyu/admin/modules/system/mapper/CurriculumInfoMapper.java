@@ -3,6 +3,7 @@ package com.ziyu.admin.modules.system.mapper;
 import com.ziyu.admin.core.utils.MyMapper;
 import com.ziyu.admin.modules.system.po.CurriculumInfo;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Update;
 
 import java.util.List;
 
@@ -16,4 +17,7 @@ import java.util.List;
 @Mapper
 public interface CurriculumInfoMapper extends MyMapper<CurriculumInfo> {
     List<CurriculumInfo> getCurriculumInfoByParams(String gradeId, String classId, Integer weekday);
+
+    @Update("truncate table class_curriculum_info")
+    void truncate();
 }

@@ -59,6 +59,9 @@ public class CurriculumInfoController extends BaseCrudController<CurriculumInfo>
     @PostMapping("/createTable")
     @RequiresPermissions("curriculumInfo:createTable")
     public Result createTable() {
+        //先清空数据库
+        curriculumInfoService.truncate();
+        //开始执行智能排课
         lessonScheduleService.lessonScheduleAuto();
         return Result.success();
     }

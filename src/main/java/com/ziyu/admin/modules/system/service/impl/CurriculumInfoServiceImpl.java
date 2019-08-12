@@ -2,6 +2,7 @@ package com.ziyu.admin.modules.system.service.impl;
 
 import com.ziyu.admin.modules.system.service.CurriculumInfoService;
 import com.ziyu.admin.modules.system.service.GradeInfoService;
+import org.apache.ibatis.annotations.Update;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ziyu.admin.modules.base.service.impl.BaseService;
@@ -59,6 +60,11 @@ public class CurriculumInfoServiceImpl extends BaseService<CurriculumInfo> imple
             mapListTwo.add(mapList);
         }
         return mapListTwo;
+    }
+
+    @Override
+    public void truncate(){
+        curriculumInfoMapper.truncate();
     }
 
 }
