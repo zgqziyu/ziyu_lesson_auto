@@ -4,7 +4,7 @@ import lombok.Data;
 
 /**
  * \* User: ziyu
- * \* Date: 2019/8/3
+ * \* Date: 2019/7/13
  * \* Time: 11:50
  * \* Description: 优先安排外部设定唯一的科目
  * \
