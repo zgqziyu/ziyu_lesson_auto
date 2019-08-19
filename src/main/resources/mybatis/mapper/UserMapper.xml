@@ -38,13 +38,14 @@
         select
         <include refid="Base_Column_List" />
         from sys_user
-        where organization_id = #{organizationId} and group_ids like "%"#{groupIds}"%"
+        where organization_id = #{organizationId} and FIND_IN_SET(#{groupIds},group_ids)
     </select>
 
     <select id="userByParams" resultMap="BaseResultMap" >
         select
         <include refid="Base_Column_List" />
         from sys_user
-        where organization_id = #{organizationId} and group_ids like "%"#{groupIds}"%" and class_ids like "%"#{classIds}"%"
+        <!-- where organization_id = #{organizationId} and group_ids like "%"#{groupIds}"%" and class_ids like "%"#{classIds}"%" -->
+        where organization_id = #{organizationId} and FIND_IN_SET(#{groupIds},group_ids) and FIND_IN_SET(#{classIds},class_ids)
     </select>
 </mapper>
