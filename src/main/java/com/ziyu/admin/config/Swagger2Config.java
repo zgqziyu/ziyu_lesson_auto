@@ -24,8 +24,8 @@ public class Swagger2Config {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Wetech-Admin接口文档")
-                .description("Wetech-Admin | 权限管理系统")
+                .title("Ziyu-Admin接口文档")
+                .description("Ziyu-Admin | 权限管理系统")
                 .termsOfServiceUrl("https://github.com/zgqziyu")
                 .version("1.0")
                 .build();
