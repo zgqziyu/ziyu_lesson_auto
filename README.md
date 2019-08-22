@@ -2,6 +2,8 @@
 
 ziyu_lesson_auto 是基于开源项目Wetech-Admin[https://github.com/cjbi/wetech-admin] 的基础上修改而成， 项目是基于 Spring Boot 2.0 + Mybatis 的轻量级后台管理系统，适用于中小型项目的管理后台以及小学，初中和高中课程智能排课管理，支持按钮级别的权限控制，系统具有最基本的用户管理、角色管理、资源管理、组织机构管理、系统日志、代码生成器等通用性功能。
 
+学校排课问题本质上是时间表问题的一类典型应用实例，是为了解决课程安排对时间和空间资源的有效利用并避免相互冲突。在排课过程中，需要考虑课程教学效果、满足教师特殊要求等多项优化指标，将各门课程安排到相应的时间和教室（教室安排功能尚未实现）。
+
 
 ## 技术选型
 
@@ -50,53 +52,9 @@ ZTree | jQuery树插件 | 3.5.29 |  [http://www.treejs.cn](http://www.treejs.cn)
 
 ## 预览图
 
-> 登陆界面
-
-![](docs/preview/1.gif)
-
-> 菜单树切换
-
-![](docs/preview/2.gif)
-
-> 表格浏览
-
-![](docs/preview/3.gif)
-
-> 增删改查
-
-![](docs/preview/4.gif)
-
-> 组织机构
-
-![](docs/preview/5.gif)
-
-> 资源管理
-
-![](docs/preview/6.gif)
-
-> 自适应测试
-
-![](docs/preview/8.gif)
-
 > 课程表显示
 
 ![](docs/preview/1.png)
 
-## 代码生成器
 
-已集成通用 Mapper 专用代码生成器Maven插件，使用该插件可以很方便的生成实体类、Mapper接口以及对应的XML文件。
-
-首先对MBG不太了解的可以先阅读下面的文档
-
-[Mybatis Geneator 详解](https://blog.csdn.net/isea533/article/details/42102297)
-
-通用 Mapper 专用代码生成器生成的 Model 会在原有基础上增加 @Table,@Id,@Column 等注解，方便自动会数据库字段进行映射。
-
-运行代码生成器需要使用命令
-
-`mvn mybatis-generator:generate`
-
-## 后续
-
-该项目是我初学Mybatis时整合的，智能排课的功能还不是很完善，还会继续完善该功能的开发。
 
