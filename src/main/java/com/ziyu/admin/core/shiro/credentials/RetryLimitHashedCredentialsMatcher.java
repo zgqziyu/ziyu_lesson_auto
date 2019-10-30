@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * \* User: ziyu
- * \* Description:
+ * \* Description: 匹配账号密码
  */
 public class RetryLimitHashedCredentialsMatcher extends HashedCredentialsMatcher {
 
