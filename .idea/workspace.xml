@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b98c860a-4684-47e1-9339-488dc561ae6c" name="Default Changelist" comment="基本信息修改">
-      <change beforePath="$PROJECT_DIR$/target/classes/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/aspect/SystemLogAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/aspect/SystemLogAspect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/impl/ClassScheduling.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/impl/ClassScheduling.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/web/CurriculumInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/web/CurriculumInfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/generator/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/generator/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/core/shiro/credentials/RetryLimitHashedCredentialsMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/core/shiro/credentials/RetryLimitHashedCredentialsMatcher.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,7 +54,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="29" />
-          <entry key="java" value="149" />
+          <entry key="java" value="166" />
           <entry key="md" value="136" />
           <entry key="txt" value="27" />
           <entry key="xml" value="31" />
@@ -67,7 +63,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="29" />
-          <entry key="JAVA" value="149" />
+          <entry key="JAVA" value="166" />
           <entry key="Markdown" value="136" />
           <entry key="PLAIN_TEXT" value="27" />
           <entry key="XML" value="31" />
@@ -103,7 +99,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/config/ShiroConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
-              <caret line="60" column="23" lean-forward="true" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+              <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -120,8 +116,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/core/shiro/credentials/RetryLimitHashedCredentialsMatcher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="132">
+              <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -163,7 +159,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="608" />
     <option name="y" value="99" />
     <option name="width" value="1105" />
@@ -245,7 +241,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572399829430" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572401070657" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -294,7 +290,7 @@
       <workItem from="1565345070459" duration="538000" />
       <workItem from="1565568819301" duration="7292000" />
       <workItem from="1565577057414" duration="12020000" />
-      <workItem from="1572396046611" duration="3394000" />
+      <workItem from="1572396046611" duration="3815000" />
     </task>
     <task id="LOCAL-00001" summary="修改简介">
       <created>1565569984626</created>
@@ -370,7 +366,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23244000" />
+    <option name="totallyTimeSpent" value="23665000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -382,7 +378,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49892703" visible="true" weight="0.23134328" />
@@ -720,7 +716,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/config/ShiroConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="60" column="23" lean-forward="true" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+          <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -775,8 +771,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/core/shiro/credentials/RetryLimitHashedCredentialsMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="132">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
         </state>
       </provider>
     </entry>
