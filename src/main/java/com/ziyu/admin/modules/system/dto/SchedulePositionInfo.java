@@ -18,6 +18,54 @@ public class SchedulePositionInfo {
     private SubjectInfoDto subjectInfoDto;//科目
     private String teacher;//老师
 
+    public Integer getGrade() {
+        return grade;
+    }
+
+    public void setGrade(Integer grade) {
+        this.grade = grade;
+    }
+
+    public Integer getClassNo() {
+        return classNo;
+    }
+
+    public void setClassNo(Integer classNo) {
+        this.classNo = classNo;
+    }
+
+    public Integer getWeekDay() {
+        return weekDay;
+    }
+
+    public void setWeekDay(Integer weekDay) {
+        this.weekDay = weekDay;
+    }
+
+    public Integer getSeqNo() {
+        return seqNo;
+    }
+
+    public void setSeqNo(Integer seqNo) {
+        this.seqNo = seqNo;
+    }
+
+    public SubjectInfoDto getSubjectInfoDto() {
+        return subjectInfoDto;
+    }
+
+    public void setSubjectInfoDto(SubjectInfoDto subjectInfoDto) {
+        this.subjectInfoDto = subjectInfoDto;
+    }
+
+    public String getTeacher() {
+        return teacher;
+    }
+
+    public void setTeacher(String teacher) {
+        this.teacher = teacher;
+    }
+
     public SchedulePositionInfo(Integer g, Integer cn, Integer wd, Integer sn, SubjectInfoDto si, String t) {
         this.grade = g;
         this.classNo = cn;

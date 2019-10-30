@@ -40,4 +40,68 @@ public class CurriculumInfo {
 
     @Column(name="user_name")
     private String userName;//教师名称
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getGradeId() {
+        return gradeId;
+    }
+
+    public void setGradeId(String gradeId) {
+        this.gradeId = gradeId;
+    }
+
+    public String getClassId() {
+        return classId;
+    }
+
+    public void setClassId(String classId) {
+        this.classId = classId;
+    }
+
+    public Integer getWeekday() {
+        return weekday;
+    }
+
+    public void setWeekday(Integer weekday) {
+        this.weekday = weekday;
+    }
+
+    public Integer getPitchNum() {
+        return pitchNum;
+    }
+
+    public void setPitchNum(Integer pitchNum) {
+        this.pitchNum = pitchNum;
+    }
+
+    public Long getSubjectInfoId() {
+        return subjectInfoId;
+    }
+
+    public void setSubjectInfoId(Long subjectInfoId) {
+        this.subjectInfoId = subjectInfoId;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
 }

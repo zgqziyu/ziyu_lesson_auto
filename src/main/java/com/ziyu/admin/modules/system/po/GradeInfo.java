@@ -42,4 +42,75 @@ public class GradeInfo {
     @Column(name = "null_position")
     private Integer nullPosition;//无课优先安排的课节，默认每天最后一节
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Integer getGrade() {
+        return grade;
+    }
+
+    public void setGrade(Integer grade) {
+        this.grade = grade;
+    }
+
+    public String getGradeName() {
+        return gradeName;
+    }
+
+    public void setGradeName(String gradeName) {
+        this.gradeName = gradeName;
+    }
+
+    public Integer getClassCount() {
+        return classCount;
+    }
+
+    public void setClassCount(Integer classCount) {
+        this.classCount = classCount;
+    }
+
+    public Integer getDayPerWeek() {
+        return dayPerWeek;
+    }
+
+    public void setDayPerWeek(Integer dayPerWeek) {
+        this.dayPerWeek = dayPerWeek;
+    }
+
+    public Integer getLessonPerDay() {
+        return lessonPerDay;
+    }
+
+    public void setLessonPerDay(Integer lessonPerDay) {
+        this.lessonPerDay = lessonPerDay;
+    }
+
+    public Integer getLessonAtAM() {
+        return lessonAtAM;
+    }
+
+    public void setLessonAtAM(Integer lessonAtAM) {
+        this.lessonAtAM = lessonAtAM;
+    }
+
+    public Integer getLessonAtPM() {
+        return lessonAtPM;
+    }
+
+    public void setLessonAtPM(Integer lessonAtPM) {
+        this.lessonAtPM = lessonAtPM;
+    }
+
+    public Integer getNullPosition() {
+        return nullPosition;
+    }
+
+    public void setNullPosition(Integer nullPosition) {
+        this.nullPosition = nullPosition;
+    }
 }

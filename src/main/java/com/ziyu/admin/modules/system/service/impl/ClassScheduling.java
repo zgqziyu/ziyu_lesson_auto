@@ -35,6 +35,142 @@ public class ClassScheduling {
     public ISubjectChoose iSubjectChoose;//科目自定义规则筛选
     public IWeightCalc iWeightCalc;//科目权重外部因素计算
 
+    public Map<Integer, GradeInfoDto> getGradeInfoMap() {
+        return gradeInfoMap;
+    }
+
+    public void setGradeInfoMap(Map<Integer, GradeInfoDto> gradeInfoMap) {
+        this.gradeInfoMap = gradeInfoMap;
+    }
+
+    public List<SchedulePositionInfo> getUdfFixedSubjectList() {
+        return udfFixedSubjectList;
+    }
+
+    public void setUdfFixedSubjectList(List<SchedulePositionInfo> udfFixedSubjectList) {
+        this.udfFixedSubjectList = udfFixedSubjectList;
+    }
+
+    public Map<Integer, Map<Integer, Map<Integer, Map<Integer, SchedulePositionInfo>>>> getScheduleInfos() {
+        return scheduleInfos;
+    }
+
+    public void setScheduleInfos(Map<Integer, Map<Integer, Map<Integer, Map<Integer, SchedulePositionInfo>>>> scheduleInfos) {
+        this.scheduleInfos = scheduleInfos;
+    }
+
+    public Map<String, Map<Integer, Map<Integer, SchedulePositionInfo>>> getTeacherSchedule() {
+        return teacherSchedule;
+    }
+
+    public void setTeacherSchedule(Map<String, Map<Integer, Map<Integer, SchedulePositionInfo>>> teacherSchedule) {
+        this.teacherSchedule = teacherSchedule;
+    }
+
+    public Map<Integer, Map<Integer, List<ScheduleClassInfo>>> getScheduleClassInfo() {
+        return scheduleClassInfo;
+    }
+
+    public void setScheduleClassInfo(Map<Integer, Map<Integer, List<ScheduleClassInfo>>> scheduleClassInfo) {
+        this.scheduleClassInfo = scheduleClassInfo;
+    }
+
+    public Map<Integer, Map<Integer, Map<Integer, Map<Integer, List<SchedulingProcessInfo>>>>> getScheduledInfo() {
+        return scheduledInfo;
+    }
+
+    public void setScheduledInfo(Map<Integer, Map<Integer, Map<Integer, Map<Integer, List<SchedulingProcessInfo>>>>> scheduledInfo) {
+        this.scheduledInfo = scheduledInfo;
+    }
+
+    public Map<Integer, Integer> getScheduledLesson() {
+        return scheduledLesson;
+    }
+
+    public void setScheduledLesson(Map<Integer, Integer> scheduledLesson) {
+        this.scheduledLesson = scheduledLesson;
+    }
+
+    public Map<Integer, Map<Integer, Integer>> getClassFreeSpace() {
+        return classFreeSpace;
+    }
+
+    public void setClassFreeSpace(Map<Integer, Map<Integer, Integer>> classFreeSpace) {
+        this.classFreeSpace = classFreeSpace;
+    }
+
+    public List<String> getTeacherList() {
+        return teacherList;
+    }
+
+    public void setTeacherList(List<String> teacherList) {
+        this.teacherList = teacherList;
+    }
+
+    public Integer getGradeCount() {
+        return gradeCount;
+    }
+
+    public void setGradeCount(Integer gradeCount) {
+        this.gradeCount = gradeCount;
+    }
+
+    public Integer getClassCount() {
+        return classCount;
+    }
+
+    public void setClassCount(Integer classCount) {
+        this.classCount = classCount;
+    }
+
+    public Integer getMaxDayPerWeek() {
+        return maxDayPerWeek;
+    }
+
+    public void setMaxDayPerWeek(Integer maxDayPerWeek) {
+        this.maxDayPerWeek = maxDayPerWeek;
+    }
+
+    public Integer getMaxLessonPerDay() {
+        return maxLessonPerDay;
+    }
+
+    public void setMaxLessonPerDay(Integer maxLessonPerDay) {
+        this.maxLessonPerDay = maxLessonPerDay;
+    }
+
+    public Integer getMaxWeight() {
+        return maxWeight;
+    }
+
+    public void setMaxWeight(Integer maxWeight) {
+        this.maxWeight = maxWeight;
+    }
+
+    public List<SchedulePositionInfo> getOnlyOneChoice() {
+        return onlyOneChoice;
+    }
+
+    public void setOnlyOneChoice(List<SchedulePositionInfo> onlyOneChoice) {
+        this.onlyOneChoice = onlyOneChoice;
+    }
+
+    public ISubjectChoose getiSubjectChoose() {
+        return iSubjectChoose;
+    }
+
+    public void setiSubjectChoose(ISubjectChoose iSubjectChoose) {
+        this.iSubjectChoose = iSubjectChoose;
+    }
+
+    public IWeightCalc getiWeightCalc() {
+        return iWeightCalc;
+    }
+
+    public void setiWeightCalc(IWeightCalc iWeightCalc) {
+        this.iWeightCalc = iWeightCalc;
+    }
+
     //开始制作课程表
     public boolean makeLessonTable() {
         //检查gradeInfo
