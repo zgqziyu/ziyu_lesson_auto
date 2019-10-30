@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * \* User: ziyu
- * \* Description: 匹配账号密码
+ * \* Description: 匹配账号密码，判断错误登录次数是否超过5次
  */
 public class RetryLimitHashedCredentialsMatcher extends HashedCredentialsMatcher {
 
