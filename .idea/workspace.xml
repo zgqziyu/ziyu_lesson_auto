@@ -1,8 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b98c860a-4684-47e1-9339-488dc561ae6c" name="Default Changelist" comment="基本信息修改">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/core/shiro/credentials/RetryLimitHashedCredentialsMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/core/shiro/credentials/RetryLimitHashedCredentialsMatcher.java" afterDir="false" />
+    <list default="true" id="b98c860a-4684-47e1-9339-488dc561ae6c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/ClassInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/ClassInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/GradeInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/GradeInfoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/ScheduleClassInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/ScheduleClassInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/SchedulePositionInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/SchedulePositionInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/SchedulingProcessInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/SchedulingProcessInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/SubjectInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/SubjectInfoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/po/CurriculumInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/po/CurriculumInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/po/GradeInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/po/GradeInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/po/SubjectInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/po/SubjectInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/ClassScheduling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/ClassScheduling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-old.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-old.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/ZiyuAdminApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/ZiyuAdminApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/config/EhCacheConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/config/EhCacheConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/config/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/config/ShiroConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/config/Swagger2Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/config/Swagger2Config.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/config/WebConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/aspect/SystemLogAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/aspect/SystemLogAspect.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/event/GlobalAnnotationDrivenListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/event/GlobalAnnotationDrivenListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/event/LogListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/event/LogListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/exception/BizException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/exception/BizException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/exception/GlobalExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/shiro/credentials/RetryLimitHashedCredentialsMatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/shiro/credentials/RetryLimitHashedCredentialsMatcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/shiro/realm/UserRealm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/shiro/realm/UserRealm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/shiro/spring/SpringCacheManagerWrapper$SpringCacheWrapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/shiro/spring/SpringCacheManagerWrapper$SpringCacheWrapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/shiro/spring/SpringCacheManagerWrapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/shiro/spring/SpringCacheManagerWrapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/utils/DateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/utils/DateUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/utils/JsonUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/utils/JsonUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/utils/PageResultSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/utils/PageResultSet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/utils/PropertiesUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/utils/PropertiesUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/utils/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/utils/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/utils/ResultCodeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/utils/ResultCodeEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/utils/SpringUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/utils/SpringUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/utils/WebUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/utils/WebUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/utils/ZipUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/core/utils/ZipUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/base/query/PageQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/base/query/PageQuery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/base/service/IService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/base/service/IService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/base/service/impl/BaseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/base/service/impl/BaseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/base/web/BaseCrudController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/base/web/BaseCrudController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/dto/ClassInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/dto/ClassInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/dto/GradeInfoDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/dto/GradeInfoDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/dto/ResourceDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/dto/ResourceDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/dto/RoleDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/dto/RoleDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/dto/ScheduleClassInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/dto/ScheduleClassInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/dto/ScheduleInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/dto/ScheduleInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/dto/SchedulePositionInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/dto/SchedulePositionInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/dto/SchedulingProcessInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/dto/SchedulingProcessInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/dto/SubjectInfoDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/dto/SubjectInfoDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/dto/TreeDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/dto/TreeDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/enums/GroupType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/enums/GroupType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/enums/ResourceType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/enums/ResourceType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/mapper/CurriculumInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/mapper/CurriculumInfoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/mapper/GradeInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/mapper/GradeInfoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/mapper/OrganizationMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/mapper/OrganizationMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/mapper/SubjectInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/mapper/SubjectInfoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/po/CurriculumInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/po/CurriculumInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/po/GradeInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/po/GradeInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/po/Group.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/po/Group.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/po/Log.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/po/Log.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/po/Organization.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/po/Organization.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/po/Resource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/po/Resource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/po/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/po/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/po/SubjectInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/po/SubjectInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/po/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/CurriculumInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/CurriculumInfoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/GradeInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/GradeInfoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/ISubjectChoose.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/ISubjectChoose.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/IWeightCalc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/IWeightCalc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/LessonScheduleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/LessonScheduleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/OrganizationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/OrganizationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/PasswordHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/PasswordHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/ResourceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/ResourceService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/RoleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/SubjectInfoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/SubjectInfoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/impl/ClassScheduling.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/impl/ClassScheduling.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/impl/CurriculumInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/impl/CurriculumInfoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/impl/GradeInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/impl/GradeInfoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/impl/OrganizationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/impl/OrganizationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/impl/ResourceServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/impl/ResourceServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/impl/RoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/impl/RoleServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/impl/SubjectInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/impl/SubjectInfoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/vo/UserVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/vo/UserVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/web/CurriculumInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/web/CurriculumInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/web/GradeInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/web/GradeInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/web/GroupController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/web/GroupController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/web/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/web/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/web/LogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/web/LogController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/web/OrganizationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/web/OrganizationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/web/ResourceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/web/ResourceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/web/RoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/web/RoleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/web/SubjectInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/web/SubjectInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/web/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ziyu/admin/modules/system/web/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/system/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/system/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ziyu/admin/WetechAdminApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ziyu/admin/WetechAdminApplicationTests.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,113 +107,98 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1618105480">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="3" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.36" value="1" />
-          <entry key="project.open.time.38" value="1" />
-          <entry key="project.open.time.42" value="1" />
-          <entry key="project.opened" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="3" />
-          <entry key="html" value="12" />
-          <entry key="iml" value="2" />
-          <entry key="java" value="92" />
-          <entry key="js" value="1" />
-          <entry key="md" value="10" />
-          <entry key="properties" value="5" />
-          <entry key="txt" value="2" />
-          <entry key="xml" value="7" />
-          <entry key="yml" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="3" />
-          <entry key="HTML" value="12" />
-          <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="92" />
-          <entry key="JavaScript" value="1" />
-          <entry key="Markdown" value="10" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Properties" value="5" />
-          <entry key="XML" value="7" />
-          <entry key="YAML" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="html" value="29" />
-          <entry key="java" value="166" />
-          <entry key="md" value="136" />
-          <entry key="txt" value="27" />
-          <entry key="xml" value="31" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="29" />
-          <entry key="JAVA" value="166" />
-          <entry key="Markdown" value="136" />
-          <entry key="PLAIN_TEXT" value="27" />
-          <entry key="XML" value="31" />
-        </counts>
-      </usages-collector>
-    </session>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/ZiyuAdminApplication.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/OrganizationService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding>
-                <element signature="e#795#796#0" expanded="true" />
-                <element signature="e#866#867#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="250">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/config/MyBatisConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/CurriculumInfoServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="726">
+              <caret line="56" column="66" lean-forward="true" selection-start-line="56" selection-start-column="66" selection-end-line="56" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/config/ShiroConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/GradeInfoServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+            <state relative-caret-position="300">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/config/WebConfig.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/GroupServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state relative-caret-position="125">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/LogServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/OrganizationServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/ResourceServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/RoleServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/SubjectInfoServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/core/shiro/credentials/RetryLimitHashedCredentialsMatcher.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+            <state relative-caret-position="125">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -130,7 +211,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ziyu/admin/ZiyuAdminApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ziyu/admin/config/MyBatisConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ziyu/admin/config/Swagger2Config.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/lesson/curriculumInfo.html" />
@@ -145,21 +225,38 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/mapper/CurriculumInfoMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/CurriculumInfoServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/banner.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/ClassScheduling.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/generator/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ziyu/admin/core/aspect/SystemLogAspect.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/web/CurriculumInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ziyu/admin/core/shiro/credentials/RetryLimitHashedCredentialsMatcher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ziyu/admin/ZiyuAdminApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/po/GradeInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/SchedulePositionInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/po/SubjectInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/GradeInfoDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/ClassScheduling.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/po/CurriculumInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/SubjectInfoDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/ClassInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/SchedulingProcessInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/ScheduleClassInfo.java" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="608" />
     <option name="y" value="99" />
     <option name="width" value="1105" />
@@ -224,12 +321,34 @@
               <item name="ziyu" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ziyu-admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ziyu_lesson_auto" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ziyu" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ziyu-admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ziyu_lesson_auto" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ziyu" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -241,10 +360,11 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572401070657" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572401365072" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -265,7 +385,7 @@
   </component>
   <component name="RunManager">
     <configuration name="ZiyuAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="ziyu-admin" />
+      <module name="ziyu_lesson_auto" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ziyu.admin.ZiyuAdminApplication" />
       <option name="ENABLE_LAUNCH_OPTIMIZATION" value="false" />
       <option name="ENABLE_JMX_AGENT" value="false" />
@@ -290,7 +410,9 @@
       <workItem from="1565345070459" duration="538000" />
       <workItem from="1565568819301" duration="7292000" />
       <workItem from="1565577057414" duration="12020000" />
-      <workItem from="1572396046611" duration="3815000" />
+      <workItem from="1572396046611" duration="4133000" />
+      <workItem from="1572419271463" duration="1461000" />
+      <workItem from="1572421945520" duration="2588000" />
     </task>
     <task id="LOCAL-00001" summary="修改简介">
       <created>1565569984626</created>
@@ -362,11 +484,18 @@
       <option name="project" value="LOCAL" />
       <updated>1572399267043</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="添加注释">
+      <created>1572401100086</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1572401100086</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23665000" />
+    <option name="totallyTimeSpent" value="28032000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -379,9 +508,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49892703" visible="true" weight="0.23134328" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49892703" visible="true" weight="0.23667377" />
       <window_info id="Structure" order="1" sideWeight="0.50107294" side_tool="true" weight="0.28518122" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -389,13 +517,14 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.2167382" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24248926" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47802788" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32939914" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
@@ -404,6 +533,7 @@
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.24785408" />
       <window_info anchor="bottom" id="Tail" order="14" />
+      <window_info anchor="right" id="Maven" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -444,229 +574,30 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修改简介" />
     <MESSAGE value="修改基本信息" />
     <MESSAGE value="修改排课功能" />
     <MESSAGE value="基本信息修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="基本信息修改" />
+    <MESSAGE value="添加注释" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加注释" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/base/blank.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-262" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/base/content-wrapper.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/base/control-sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-858" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/base/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/base/unauthorized.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/base/main-sidebar.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/base/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1958">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/base/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/po/CurriculumInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/core/utils/MyMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/mapper/CurriculumInfoMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6996">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/CurriculumInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/WeightDefines.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="56" lean-forward="true" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/SchedulingProcessInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/ISubjectChoose.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/CurriculumInfoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="56" column="66" lean-forward="true" selection-start-line="56" selection-start-column="66" selection-end-line="56" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/LessonScheduleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2354">
-          <caret line="122" column="33" selection-start-line="122" selection-start-column="33" selection-end-line="122" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/ClassScheduling.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="43" column="20" lean-forward="true" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring-devtools.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/banner.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-prd.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-old.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-990">
-          <caret line="15" column="59" lean-forward="true" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/generator/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1408">
-          <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ehcache.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/web/LogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/mapper/LogMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/LogServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/LogService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="80">
-            <caret line="83" column="23" lean-forward="true" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.4.RELEASE/spring-context-5.0.4.RELEASE.jar!/org/springframework/context/ApplicationEventPublisher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/po/Log.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-176">
@@ -695,31 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/ZiyuAdminApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="e#795#796#0" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/config/MyBatisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/config/ShiroConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/config/AsynchronousSpringEventsConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -731,20 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/config/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/core/shiro/realm/UserRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -769,10 +661,573 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/ZiyuAdminApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="16" column="65" lean-forward="true" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1728">
+          <caret line="64" column="21" lean-forward="true" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/core/shiro/credentials/RetryLimitHashedCredentialsMatcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+        <state relative-caret-position="324">
+          <caret line="19" column="74" lean-forward="true" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1040">
+          <caret line="59" column="67" selection-start-line="59" selection-start-column="67" selection-end-line="59" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/config/MyBatisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/generator.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-prd.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ehcache.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/banner.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="68" lean-forward="true" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-old.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring-devtools.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/system/log.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/core/shiro/realm/UserRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/config/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.20/lombok-1.16.20-sources.jar!/lombok/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/po/SubjectInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#852#853#0" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#990#991#0" expanded="true" />
+            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#1078#1079#0" expanded="true" />
+            <element signature="e#1124#1125#0" expanded="true" />
+            <element signature="e#1169#1170#0" expanded="true" />
+            <element signature="e#1209#1210#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+            <element signature="e#1334#1335#0" expanded="true" />
+            <element signature="e#1374#1375#0" expanded="true" />
+            <element signature="e#1409#1410#0" expanded="true" />
+            <element signature="e#1466#1467#0" expanded="true" />
+            <element signature="e#1514#1515#0" expanded="true" />
+            <element signature="e#1554#1555#0" expanded="true" />
+            <element signature="e#1589#1590#0" expanded="true" />
+            <element signature="e#1646#1647#0" expanded="true" />
+            <element signature="e#1694#1695#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/ScheduleInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/RoleDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/ResourceDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/po/GradeInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="708">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#958#959#0" expanded="true" />
+            <element signature="e#983#984#0" expanded="true" />
+            <element signature="e#1017#1018#0" expanded="true" />
+            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="e#1078#1079#0" expanded="true" />
+            <element signature="e#1106#1107#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
+            <element signature="e#1183#1184#0" expanded="true" />
+            <element signature="e#1219#1220#0" expanded="true" />
+            <element signature="e#1251#1252#0" expanded="true" />
+            <element signature="e#1301#1302#0" expanded="true" />
+            <element signature="e#1343#1344#0" expanded="true" />
+            <element signature="e#1381#1382#0" expanded="true" />
+            <element signature="e#1414#1415#0" expanded="true" />
+            <element signature="e#1467#1468#0" expanded="true" />
+            <element signature="e#1511#1512#0" expanded="true" />
+            <element signature="e#1549#1550#0" expanded="true" />
+            <element signature="e#1582#1583#0" expanded="true" />
+            <element signature="e#1635#1636#0" expanded="true" />
+            <element signature="e#1679#1680#0" expanded="true" />
+            <element signature="e#1719#1720#0" expanded="true" />
+            <element signature="e#1754#1755#0" expanded="true" />
+            <element signature="e#1811#1812#0" expanded="true" />
+            <element signature="e#1859#1860#0" expanded="true" />
+            <element signature="e#1897#1898#0" expanded="true" />
+            <element signature="e#1930#1931#0" expanded="true" />
+            <element signature="e#1983#1984#0" expanded="true" />
+            <element signature="e#2027#2028#0" expanded="true" />
+            <element signature="e#2065#2066#0" expanded="true" />
+            <element signature="e#2098#2099#0" expanded="true" />
+            <element signature="e#2151#2152#0" expanded="true" />
+            <element signature="e#2195#2196#0" expanded="true" />
+            <element signature="e#2235#2236#0" expanded="true" />
+            <element signature="e#2270#2271#0" expanded="true" />
+            <element signature="e#2327#2328#0" expanded="true" />
+            <element signature="e#2375#2376#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/GradeInfoDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+          <folding>
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#861#862#0" expanded="true" />
+            <element signature="e#894#895#0" expanded="true" />
+            <element signature="e#922#923#0" expanded="true" />
+            <element signature="e#965#966#0" expanded="true" />
+            <element signature="e#999#1000#0" expanded="true" />
+            <element signature="e#1035#1036#0" expanded="true" />
+            <element signature="e#1067#1068#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="e#1159#1160#0" expanded="true" />
+            <element signature="e#1197#1198#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1283#1284#0" expanded="true" />
+            <element signature="e#1327#1328#0" expanded="true" />
+            <element signature="e#1365#1366#0" expanded="true" />
+            <element signature="e#1398#1399#0" expanded="true" />
+            <element signature="e#1451#1452#0" expanded="true" />
+            <element signature="e#1495#1496#0" expanded="true" />
+            <element signature="e#1535#1536#0" expanded="true" />
+            <element signature="e#1570#1571#0" expanded="true" />
+            <element signature="e#1627#1628#0" expanded="true" />
+            <element signature="e#1675#1676#0" expanded="true" />
+            <element signature="e#1713#1714#0" expanded="true" />
+            <element signature="e#1746#1747#0" expanded="true" />
+            <element signature="e#1799#1800#0" expanded="true" />
+            <element signature="e#1843#1844#0" expanded="true" />
+            <element signature="e#1881#1882#0" expanded="true" />
+            <element signature="e#1914#1915#0" expanded="true" />
+            <element signature="e#1967#1968#0" expanded="true" />
+            <element signature="e#2011#2012#0" expanded="true" />
+            <element signature="e#2051#2052#0" expanded="true" />
+            <element signature="e#2086#2087#0" expanded="true" />
+            <element signature="e#2143#2144#0" expanded="true" />
+            <element signature="e#2191#2192#0" expanded="true" />
+            <element signature="e#2244#2245#0" expanded="true" />
+            <element signature="e#2279#2280#0" expanded="true" />
+            <element signature="e#2349#2350#0" expanded="true" />
+            <element signature="e#2397#2398#0" expanded="true" />
+            <element signature="e#2451#2452#0" expanded="true" />
+            <element signature="e#2484#2485#0" expanded="true" />
+            <element signature="e#2553#2554#0" expanded="true" />
+            <element signature="e#2597#2598#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/ScheduleClassInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+          <folding>
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#938#939#0" expanded="true" />
+            <element signature="e#984#985#0" expanded="true" />
+            <element signature="e#1021#1022#0" expanded="true" />
+            <element signature="e#1053#1054#0" expanded="true" />
+            <element signature="e#1104#1105#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#1216#1217#0" expanded="true" />
+            <element signature="e#1254#1255#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/SchedulingProcessInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding>
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#872#873#0" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#957#958#0" expanded="true" />
+            <element signature="e#996#997#0" expanded="true" />
+            <element signature="e#1039#1040#0" expanded="true" />
+            <element signature="e#1077#1078#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+            <element signature="e#1194#1195#0" expanded="true" />
+            <element signature="e#1247#1248#0" expanded="true" />
+            <element signature="e#1282#1283#0" expanded="true" />
+            <element signature="e#1352#1353#0" expanded="true" />
+            <element signature="e#1400#1401#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/ClassScheduling.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="247" column="17" lean-forward="true" selection-start-line="247" selection-start-column="17" selection-end-line="247" selection-end-column="17" />
+          <folding>
+            <element signature="e#1605#1606#0" expanded="true" />
+            <element signature="e#1640#1641#0" expanded="true" />
+            <element signature="e#1716#1717#0" expanded="true" />
+            <element signature="e#1764#1765#0" expanded="true" />
+            <element signature="e#1830#1831#0" expanded="true" />
+            <element signature="e#1872#1873#0" expanded="true" />
+            <element signature="e#2743#2744#0" expanded="true" />
+            <element signature="e#2783#2784#0" expanded="true" />
+            <element signature="e#3347#3348#0" expanded="true" />
+            <element signature="e#3385#3386#0" expanded="true" />
+            <element signature="e#3462#3463#0" expanded="true" />
+            <element signature="e#3516#3517#0" expanded="true" />
+            <element signature="e#3586#3587#0" expanded="true" />
+            <element signature="e#3623#3624#0" expanded="true" />
+            <element signature="e#3808#3809#0" expanded="true" />
+            <element signature="e#3842#3843#0" expanded="true" />
+            <element signature="e#3902#3903#0" expanded="true" />
+            <element signature="e#3948#3949#0" expanded="true" />
+            <element signature="e#3986#3987#0" expanded="true" />
+            <element signature="e#4019#4020#0" expanded="true" />
+            <element signature="e#4072#4073#0" expanded="true" />
+            <element signature="e#4116#4117#0" expanded="true" />
+            <element signature="e#4154#4155#0" expanded="true" />
+            <element signature="e#4187#4188#0" expanded="true" />
+            <element signature="e#4240#4241#0" expanded="true" />
+            <element signature="e#4284#4285#0" expanded="true" />
+            <element signature="e#4325#4326#0" expanded="true" />
+            <element signature="e#4361#4362#0" expanded="true" />
+            <element signature="e#4420#4421#0" expanded="true" />
+            <element signature="e#4470#4471#0" expanded="true" />
+            <element signature="e#4513#4514#0" expanded="true" />
+            <element signature="e#4551#4552#0" expanded="true" />
+            <element signature="e#4614#4615#0" expanded="true" />
+            <element signature="e#4668#4669#0" expanded="true" />
+            <element signature="e#4705#4706#0" expanded="true" />
+            <element signature="e#4737#4738#0" expanded="true" />
+            <element signature="e#4788#4789#0" expanded="true" />
+            <element signature="e#4830#4831#0" expanded="true" />
+            <element signature="e#4890#4891#0" expanded="true" />
+            <element signature="e#4926#4927#0" expanded="true" />
+            <element signature="e#5004#5005#0" expanded="true" />
+            <element signature="e#5054#5055#0" expanded="true" />
+            <element signature="e#5103#5104#0" expanded="true" />
+            <element signature="e#5140#5141#0" expanded="true" />
+            <element signature="e#5208#5209#0" expanded="true" />
+            <element signature="e#5260#5261#0" expanded="true" />
+            <element signature="e#5303#5304#0" expanded="true" />
+            <element signature="e#5337#5338#0" expanded="true" />
+            <element signature="e#5396#5397#0" expanded="true" />
+            <element signature="e#5442#5443#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/po/CurriculumInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="733">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+          <folding>
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1016#1017#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
+            <element signature="e#1134#1135#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1210#1211#0" expanded="true" />
+            <element signature="e#1248#1249#0" expanded="true" />
+            <element signature="e#1283#1284#0" expanded="true" />
+            <element signature="e#1313#1314#0" expanded="true" />
+            <element signature="e#1360#1361#0" expanded="true" />
+            <element signature="e#1398#1399#0" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="true" />
+            <element signature="e#1465#1466#0" expanded="true" />
+            <element signature="e#1514#1515#0" expanded="true" />
+            <element signature="e#1554#1555#0" expanded="true" />
+            <element signature="e#1592#1593#0" expanded="true" />
+            <element signature="e#1628#1629#0" expanded="true" />
+            <element signature="e#1684#1685#0" expanded="true" />
+            <element signature="e#1734#1735#0" expanded="true" />
+            <element signature="e#1765#1766#0" expanded="true" />
+            <element signature="e#1794#1795#0" expanded="true" />
+            <element signature="e#1836#1837#0" expanded="true" />
+            <element signature="e#1872#1873#0" expanded="true" />
+            <element signature="e#1907#1908#0" expanded="true" />
+            <element signature="e#1938#1939#0" expanded="true" />
+            <element signature="e#1986#1987#0" expanded="true" />
+            <element signature="e#2026#2027#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/SubjectInfoDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#506#507#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
+            <element signature="e#765#766#0" expanded="true" />
+            <element signature="e#803#804#0" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#891#892#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1022#1023#0" expanded="true" />
+            <element signature="e#1089#1090#0" expanded="true" />
+            <element signature="e#1147#1148#0" expanded="true" />
+            <element signature="e#1187#1188#0" expanded="true" />
+            <element signature="e#1222#1223#0" expanded="true" />
+            <element signature="e#1279#1280#0" expanded="true" />
+            <element signature="e#1327#1328#0" expanded="true" />
+            <element signature="e#1367#1368#0" expanded="true" />
+            <element signature="e#1402#1403#0" expanded="true" />
+            <element signature="e#1459#1460#0" expanded="true" />
+            <element signature="e#1507#1508#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/SchedulePositionInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+          <folding>
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#961#962#0" expanded="true" />
+            <element signature="e#995#996#0" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1081#1082#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
+            <element signature="e#1201#1202#0" expanded="true" />
+            <element signature="e#1235#1236#0" expanded="true" />
+            <element signature="e#1265#1266#0" expanded="true" />
+            <element signature="e#1311#1312#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/dto/ClassInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/LessonScheduleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="285" column="26" lean-forward="true" selection-start-line="285" selection-start-column="26" selection-end-line="285" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/OrganizationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/CurriculumInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="56" column="66" lean-forward="true" selection-start-line="56" selection-start-column="66" selection-end-line="56" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/GradeInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/GroupServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/LogServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/OrganizationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/ResourceServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/RoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/SubjectInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ziyu/admin/modules/system/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
